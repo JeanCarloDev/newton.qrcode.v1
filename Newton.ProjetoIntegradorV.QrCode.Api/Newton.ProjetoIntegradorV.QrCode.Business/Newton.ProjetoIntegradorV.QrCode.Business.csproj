@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="QRCoder" Version="1.3.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Newton.ProjetoIntegradorV.QrCode.Data\Newton.ProjetoIntegradorV.QrCode.Data.csproj" />
+    <ProjectReference Include="..\Newton.ProjetoIntegradorV.QrCode.Domain\Newton.ProjetoIntegradorV.QrCode.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

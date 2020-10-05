@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.2\Newton.ProjetoIntegradorV.QrCode.Api.xml</DocumentationFile>
+    <OutputPath>bin\Debug\netcoreapp2.2</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
+    <PackageReference Include="QRCoder" Version="1.3.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Newton.ProjetoIntegradorV.QrCode.Business\Newton.ProjetoIntegradorV.QrCode.Business.csproj" />
+    <ProjectReference Include="..\Newton.ProjetoIntegradorV.QrCode.Data\Newton.ProjetoIntegradorV.QrCode.Data.csproj" />
+    <ProjectReference Include="..\Newton.ProjetoIntegradorV.QrCode.Domain\Newton.ProjetoIntegradorV.QrCode.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
